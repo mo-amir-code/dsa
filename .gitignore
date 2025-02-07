@@ -1,0 +1,23 @@
+# Allow C and C++ source files
+!*.c
+!*.cpp
+!*.cc
+!*.cxx
+!*.h
+!*.hpp
+!*.hh
+!*.hxx
+
+
+# Ignore object and binary files
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib
+*.lib
+*.bin
+*.elf
