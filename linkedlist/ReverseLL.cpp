@@ -5,13 +5,11 @@ struct Node
 {
   int val;
   Node *next;
-  Node *prev;
 
   Node(int v)
   {
     val = v;
     next = NULL;
-    prev = NULL;
   }
 };
 
