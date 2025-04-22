@@ -41,6 +41,22 @@ class SinglyLinkedList{
          temp->next = newNode;
        }
 
+       void findPos(int val){
+         Node* temp = head;
+         int pos = 0;
+
+         while(temp != nullptr){
+            if(temp->data == val){
+               cout<<"\nValue: "<<val<<" exist on the pos: "<<pos+1<<endl;
+               return;
+            }
+            temp = temp->next;
+            pos++;
+         }
+
+         cout<<"Val is not found"<<endl;
+       }
+
        void display(){
         Node* temp = head;
         while(temp->next != nullptr){
@@ -63,6 +79,7 @@ int main(){
     sl.insert(8);
     sl.insert(9);
     sl.display();
+    sl.findPos(7);
 
     return 0;
 }
